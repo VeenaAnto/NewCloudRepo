@@ -4,7 +4,7 @@ Resource    ../../Resources/PageObjects/LoginPage.robot
 Resource    ../../Resources/CommonFunctionality.robot
 Resource    ../../TestData/LoginData.robot
 Library    SeleniumLibrary
-Resource    ../../../../../../Project/Resources/PageObjects/SecurityConsolePage.robot
+Resource    ../../Resources/PageObjects/SecurityConsolePage.robot
 Suite Setup    Log    Inside TestSuite
 Suite Teardown    Log    Inside Suite Teardown
 Test Setup    Log    Inside Test
@@ -12,7 +12,7 @@ Test Teardown    Log    Inside Test Teardown
 
 
 *** Test Cases ***
-Verify direct SignIn Oracle Applications Cloud 
+VerifyDirectSignInOracleApplicationsCloud 
     # LoginPage.Setup firefoxdriver     
     LoginPage.Choose Browser    ${url}
     Set Screenshot Directory    ${OUTPUT FILE}${/}..${/}${TEST_NAME}${/}
@@ -25,7 +25,7 @@ Verify direct SignIn Oracle Applications Cloud
     LoginPage.Verify Title of Home Page
     Capture Page Screenshot    HomePage.png
     
-SecurityConsole_UserSearchTest
+SecurityConsoleUserSearchTest
      
     SecurityConsolePage.Click SecurityConsole
     CommonFunctionality.Wait for PageLoad             
