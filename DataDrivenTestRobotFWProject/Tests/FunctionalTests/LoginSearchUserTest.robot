@@ -13,7 +13,8 @@ Test Teardown    Log    Inside Test Teardown
 
 *** Test Cases ***
 VerifyDirectSignInOracleApplicationsCloud 
-    # LoginPage.Setup firefoxdriver     
+    # LoginPage.Setup firefoxdriver   
+    [Tags]    Smoke Tests  
     LoginPage.Choose Browser    ${url}
     Set Screenshot Directory    ${OUTPUT FILE}${/}..${/}${TEST_NAME}${/}
     LoginPage.Input Login Credentials    ${username}    ${password}
@@ -26,7 +27,8 @@ VerifyDirectSignInOracleApplicationsCloud
     Capture Page Screenshot    HomePage.png
     
 SecurityConsoleUserSearchTest
-     
+    
+    [Tags]    Sanity Tests 
     SecurityConsolePage.Click SecurityConsole
     CommonFunctionality.Wait for PageLoad             
     SecurityConsolePage.Click Users

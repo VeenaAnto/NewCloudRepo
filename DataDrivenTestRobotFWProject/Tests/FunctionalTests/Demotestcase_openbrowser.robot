@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../../../../../../Project/Resources/PageObjects/SecurityConsolePage.robot
+Resource    ../../Resources/PageObjects/SecurityConsolePage.robot
 Resource    ../../Resources/CommonFunctionality.robot
 Suite Setup    Log    Inside TestSuite
 Suite Teardown    Log    Inside Suite Teardown
