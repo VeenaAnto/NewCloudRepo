@@ -13,8 +13,9 @@ Test Teardown    Log    Inside Test Teardown
 
 *** Test Cases ***
 VerifyDirectSignInOracleApplicationsCloud 
+    [Documentation]    This testcase verifies the basic search functionality
     # LoginPage.Setup firefoxdriver   
-    [Tags]    Smoke Tests  
+    [Tags]    Sanity Tests  
     LoginPage.Choose Browser    ${url}
     Set Screenshot Directory    ${OUTPUT FILE}${/}..${/}${TEST_NAME}${/}
     LoginPage.Input Login Credentials    ${username}    ${password}
@@ -25,10 +26,13 @@ VerifyDirectSignInOracleApplicationsCloud
     LoginPage.Click on Home icon
     LoginPage.Verify Title of Home Page
     Capture Page Screenshot    HomePage.png
+    ${DATE1}=    Get Time   %day/%month/%year hour:min    
+    Log    ${DATE1}
     
 SecurityConsoleUserSearchTest
+    [Documentation]    This testcase verifies User role search functionality
     
-    [Tags]    Sanity Tests 
+    [Tags]    Smoke Tests 
     SecurityConsolePage.Click SecurityConsole
     CommonFunctionality.Wait for PageLoad             
     SecurityConsolePage.Click Users
@@ -36,6 +40,8 @@ SecurityConsoleUserSearchTest
     SecurityConsolePage.Input Text and Click Search    veena 
     SecurityConsolePage.Verify Search Users Result
     CommonFunctionality.Close Browser Instance
+
+    
     
 
         

@@ -6,6 +6,11 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>org.python.pydev.PyDevBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>org.robotframework.ide.eclipse.main.plugin.robotLibrariesBuilder</name>
 			<arguments>
 			</arguments>
@@ -13,12 +18,33 @@
 	</buildSpec>
 	<natures>
 		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
+		<nature>org.python.pydev.pythonNature</nature>
 	</natures>
 	<linkedResources>
+		<link>
+			<name>libspecs/BuiltIn.py</name>
+			<type>1</type>
+			<location>C:/Python/lib/site-packages/robot/libraries/BuiltIn.py</location>
+		</link>
+		<link>
+			<name>libspecs/DataDriver.py</name>
+			<type>1</type>
+			<location>C:/Python/Lib/site-packages/DataDriver/__init__.py</location>
+		</link>
+		<link>
+			<name>libspecs/Reserved.py</name>
+			<type>1</type>
+			<location>C:/Python/lib/site-packages/robot/libraries/Reserved.py</location>
+		</link>
 		<link>
 			<name>libspecs/SeleniumLibrary.py</name>
 			<type>1</type>
 			<location>C:/Python/Lib/site-packages/SeleniumLibrary/keywords/element.py</location>
+		</link>
+		<link>
+			<name>libspecs/args_73beb853.arg</name>
+			<type>1</type>
+			<location>C:/Users/VeenaA/AppData/Local/Temp/RobotTempDir1187087498696365739/args_73beb853.arg</location>
 		</link>
 	</linkedResources>
 </projectDescription>
