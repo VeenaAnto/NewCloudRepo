@@ -39,7 +39,7 @@
 		<link>
 			<name>libspecs/SeleniumLibrary.py</name>
 			<type>1</type>
-			<location>C:/Python/Lib/site-packages/SeleniumLibrary/keywords/element.py</location>
+			<location>C:/Python/Lib/site-packages/SeleniumLibrary/keywords/waiting.py</location>
 		</link>
 		<link>
 			<name>libspecs/args_73beb853.arg</name>
